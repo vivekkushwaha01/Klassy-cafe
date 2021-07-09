@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    padding: 8px;
+}
+
+.center-container {
+    /* border: 1px solid black; */
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.inside-center-container {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-list ul {
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+.menu-list ul li {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.menu-list ul li,
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.menu-list ul li a:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: red;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: rgb(230, 225, 225);
+    /* min-width: 160px; */
+    min-width: 180px;
+    text-align: center;
+    z-index:1;
+}
+
+.dropdown_content p {
+    margin: 0px;
+    padding: 10px;
+}
+
+.dropdown_content p a {
+    color: rgb(112, 110, 110);
+}
+
+.dropdown_content p:hover {
+    background-color: white;
+}
+
+.dropdown_content .para {
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+/* ------------------------------------------------------- carousel part----------------------------------------------- */
+.carousel-btn {
+    background-color: tomato;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.carousel-container {
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+}
+
+.carousel-part {
+    /* border: 1px solid black; */
+    height: 700px;
+}
+
+.carousel-text {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(top-left-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+
+.carousel-image {
+    width: 65%;
+}
+
+
+
+.text button {
+    background-color: white;
+    color: tomato;
+    border-radius: 3px;
+    border: none;
+    padding: 8px 14px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.text button:hover {
+    background-color: #eeeaea;
+}
+
+.text h4 {
+    font-family: 'Lobster', cursive;
+    font-size: 54px;
+}
+
+.text h6 {
+    letter-spacing: 3px;
+}
+
+.full-container2 {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    padding: 128px 0;
+}
+
+.video-text {
+    /* border: 1px solid blue; */
+    width: 50%;
+}
+
+/* .part1 {
+    border: 1px solid black;
+} */
+
+.part1-text {
+    /* border: 1px solid yellowgreen; */
+    font-weight: 400;
+}
+
+.part1-text p a {
+    color: dodgerblue;
+}
+
+.part1-text p a:hover {
+    text-decoration: none;
+    color: rgb(43, 90, 138);
+}
+
+.part1-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .part1 img {
+    border: 1px solid blue;
+} */
+
+
+/* -----------------------------------  cake part css -------------------------------------------------- */
+
+.cake-menu {
+    /* border: 1px solid red; */
+    padding: 20px;
+    background-color: #fffafa;
+}
+
+.orange-text div {
+    width: 50px;
+    height: 1px;
+    background-color: #fb5849;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    margin-right: 10px;
+}
+
+.orange-text p{
+    color: tomato;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.text-box {
+    /* border: 1px solid blue; */
+    width: 50%;
+    /* height: 100px; */
+    padding: 0 50px;
+}
+
+
+.after-text-box {
+    /* border: 1px solid palevioletred; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-tag {
+    /* border: 1px solid red; */
+    position: relative;
+    top: 77px;
+    padding: 20px 0;
+    width: 35%;
+    text-align: center;
+    color: white;
+    background-color: #fb5849;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.scroll-image-box {
+    /* container */
+    /* border: 1px solid black; */
+    width: 18%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.img-container {
+    /* image */
+    /* border: 1px solid red; */
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+
+}
+
+.img-hover-text {
+    /* overlay */
+    border: 1px solid #fb5849;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fb5849;
+    overflow: hidden;
+    height: 0px;
+    transition: .700s ease;
+}
+
+.scroll-image-box:hover .img-hover-text {
+    height: 50%;
+}
+
+.over-text {
+    /* text */
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align:justify; */
+    /* font-size: 20px; */
+    z-index: 2;
+}
+
+/* -----------------------------------------chef css------------------------------------------------------- */
+
+.chef-container {
+    /* border: 1px solid blue; */
+    padding: 100px 0;
+}
+
+.inside-chef-container {
+    /* border: 1px solid red; */
+    width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+/* .box {
+    border: 1px solid yellow;
+} */
+
+#color {
+    /* border: 1px solid blue; */
+
+    color: #fb5849;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#below-color {
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.display-horz {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chef-img-box {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.chef-img-box img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.chef-img-text {
+    /* border: 1px solid red; */
+    margin: 10px 0;
+}
+
+.chef-img-text p {
+    line-height: 10px;
+}
+
+.chef-img-box:hover {
+    border: 1px solid #fb5849;
+}
+
+.chef-img-box:hover h4 {
+    color: #fb5849;
+}
+
+/* ---------------------------------------  form css -------------------------------------------------- */
+
+.container2 {
+    /* border:1px solid red; */
+    background-image: url(reservation-bg.jpg);
+    width: 100%;
+    /* height: 800px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.inside-container2 {
+    /* border: 1px solid red; */
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.two-box {
+    /* border: 1px solid blue; */
+    width: 49%;
+    /* height: 400px; */
+
+}
+
+.box1 {
+    /* border: 1px solid green; */
+    /* height: 200px; */
+}
+
+.box1-first {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    color: white;
+}
+
+.box1-text {
+    /* border: 1px solid blue; */
+}
+
+.form-line {
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+}
+
+.box1-icon {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box1-info {
+    /* border: 1px solid black; */
+    background-color: white;
+    width: 45%;
+    /* height:150px; */
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.fas {
+    background-color: #fb5849;
+    color: white;
+    padding: 25px;
+    border-radius: 50px;
+    position: relative;
+    top: -40px;
+}
+
+.right-box {
+    /* border: 1px solid hotpink; */
+    background-color: white;
+    border-radius: 3px;
+}
+
+.actual-form-div {
+    /* border: 1px solid green; */
+}
+
+.actual-form-div-text {
+    text-align: center;
+    /* color:white; */
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.actual-form-div-input {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.actual-form-div-input input,
+select {
+    width: 40%;
+    padding: 5px 10px;
+    color: grey;
+    border: 1px solid #ccc;
+}
+
+#message {
+    width: 90%;
+    height: 150px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.actual-form-div-input button {
+    width: 90%;
+    padding: 10px;
+    background-color: #fb5849;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.actual-form-div-input button:hover{
+    background-color: #ee786d;
+}
+/* ---------------------------------- second last container css  -------------------------------------------------- */
+.second-last-container {
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.second-last-text {
+    /* border: 1px solid blue; */
+    margin: 50px 0;
+}
+
+.inside-second-last {
+    /* border: 1px solid red; */
+    width: 1100px;
+    margin: auto;
+}
+
+.last-first-text {
+    /* border: 1px solid black; */
+    text-align: center;
+    margin: 10px 0;
+}
+
+.three-icon {
+    /* border: 1px solid green; */
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.ver-horz-menu {
+    /* border: 1px solid yellowgreen; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu-list1 {
+    /* border: 1px solid blue; */
+    width: 49%;
+    padding: 0 15px;
+}
+
+.first-food {
+    /* border: 1px solid violet; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+
+}
+
+/* .first-food-box {
+    border: 1px solid black;
+} */
+
+/* .food-box-img {
+    border: 1px solid red;
+} */
+
+/* .food-box-text {
+    border: 1px solid blue;
+    width:70%;
+} */
+
+.food-box-tag {
+    /* border: 1px solid green; */
+    background-color: #fb5849;
+    color: white;
+    padding: 20px 8px;
+    border-radius: 5px;
+}
+
+.food-box-tag p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: auto;
+}
+
+/* ---------------------------------------footer css--------------------------------------------- */
+.foot-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    background-color: #fb5849;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.foot-div1 {
+    /* border: 1px solid blue; */
+    padding:25px 0;
+}
+
+.foot-div1 ul li {
+    /* border: 1px solid yellow; */
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 10px;
+
+}
+
+.foot-div1 p {
+    color: white;
+    text-align: right;
+    font-size: 16px;
+}
+
+.fab {
+    background-color: #fb5849;
+    color: white;
+ 
+}
+
